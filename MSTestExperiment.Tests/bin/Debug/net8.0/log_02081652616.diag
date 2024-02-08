@@ -1,0 +1,25 @@
+[16:18:52.625 Microsoft.Testing.Platform.Builder.TestApplication - Information] Version: 1.0.0-preview.24068.6+768f45c395062627b9873ff8f23afadad0089255 (asynchronous log write)
+[16:18:52.628 Microsoft.Testing.Platform.Builder.TestApplication - Information] Logging level: Information
+[16:18:52.628 Microsoft.Testing.Platform.Builder.TestApplication - Information] CreateBuilderAsync entry time: 16:18:52.561
+[16:18:52.633 Microsoft.Testing.Platform.Builder.TestApplication - Information] PID: 15572
+[16:18:52.633 Microsoft.Testing.Platform.Builder.TestApplication - Information] Runtime information: win-x64 - .NET 8.0.1
+[16:18:52.634 Microsoft.Testing.Platform.Builder.TestApplication - Information] Runtime location: C:\Program Files\dotnet\shared\Microsoft.NETCore.App\8.0.1\System.Private.CoreLib.dll
+[16:18:52.634 Microsoft.Testing.Platform.Builder.TestApplication - Information] IsDynamicCodeSupported: True
+[16:18:52.634 Microsoft.Testing.Platform.Builder.TestApplication - Information] Test module: C:\projects\ms-test-experiment\MSTestExperiment.Tests\bin\Debug\net8.0\MSTestExperiment.Tests.dll
+[16:18:52.634 Microsoft.Testing.Platform.Builder.TestApplication - Information] Command line arguments: '--server --diagnostic --diagnostic-verbosity Information --diagnostic-output-directory C:\projects\ms-test-experiment\MSTestExperiment.Tests\bin\Debug\net8.0 --client-port 53998'
+[16:18:52.636 Microsoft.Testing.Platform.Builder.TestApplication - Information] TESTINGPLATFORM_DEFAULT_HANG_TIMEOUT: ''
+[16:18:52.654 Microsoft.Testing.Platform.Hosts.TestHostBuilder - Information] Setting RegisterEnvironmentVariablesConfigurationSource: 'True'
+[16:18:52.659 Microsoft.Testing.Platform.Configurations.JsonConfigurationSource+JsonConfigurationProvider - Information] Config file 'C:\projects\ms-test-experiment\MSTestExperiment.Tests\bin\Debug\net8.0\MSTestExperiment.Tests.testingplatformconfig.json' not found.
+[16:18:52.661 Microsoft.Testing.Platform.Hosts.TestHostBuilder - Information] Setting PlatformExitProcessOnUnhandledException: 'False', config file: False environment variable:  VSTest mode: False
+[16:18:52.694 Microsoft.Testing.Platform.Telemetry.TelemetryManager - Information] TestApplicationOptions.EnableTelemetry: True
+[16:18:52.696 Microsoft.Testing.Platform.Telemetry.TelemetryManager - Information] TESTINGPLATFORM_TELEMETRY_OPTOUT environment variable: '0'
+[16:18:52.696 Microsoft.Testing.Platform.Telemetry.TelemetryManager - Information] DOTNET_CLI_TELEMETRY_OPTOUT environment variable: ''
+[16:18:52.696 Microsoft.Testing.Platform.Telemetry.TelemetryManager - Information] TESTINGPLATFORM_NOBANNER environment variable: ''
+[16:18:52.696 Microsoft.Testing.Platform.Telemetry.TelemetryManager - Information] DOTNET_NOLOGO environment variable: ''
+[16:18:52.696 Microsoft.Testing.Platform.Telemetry.TelemetryManager - Information] Telemetry is 'ENABLED'
+[16:18:52.699 Microsoft.Testing.Platform.Telemetry.TelemetryManager - Information] Telemetry collector provider: 'Microsoft.Testing.Extensions.Telemetry.AppInsightsProvider'
+[16:18:52.740 Microsoft.Testing.Platform.Hosts.ServerTestHost - Information] Starting server mode
+[16:18:52.799 Microsoft.Testing.Platform.Hosts.ServerTestHost - Information] Received initialize request
+[16:18:52.816 Microsoft.Testing.Platform.Hosts.ServerTestHost - Information] Connection established with 'Microsoft Visual Studio Testing Platform Client', protocol version 1.0.0
+[16:18:52.856 Microsoft.Testing.Platform.Hosts.ServerTestHost - Information] Received testing/discoverTests request
+[16:18:52.880 Microsoft.Testing.Platform.Requests.TestHostTestFrameworkInvoker - Information] TestFrameworkAdapter Uid: 'MSTestExtension' Version: '3.2.0' DisplayName: 'MSTest' Description: 'MSTest Framework for Microsoft Testing Platform'
