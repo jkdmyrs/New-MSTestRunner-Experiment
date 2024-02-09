@@ -1,3 +1,5 @@
+using System.ComponentModel.Design;
+
 namespace MSTestExperiment.Tests
 {
     [TestClass]
@@ -6,11 +8,12 @@ namespace MSTestExperiment.Tests
         [AssemblyInitialize]
         public static void AssemblyInit(TestContext _)
         {
-            while (!Mutex.TryOpenExisting("FunctionStartup", out Mutex? _))
+            Mutex? functionStarted = null;
+            while (!Mutex.TryOpenExisting("FunctionStartup", out functionStarted))
             {
                 Thread.Sleep(200);
             }
-
+            functionStarted?.Dispose();
         }
 
         [TestMethod]
