@@ -1,8 +1,21 @@
+using System.ComponentModel.Design;
+
 namespace MSTestExperiment.Tests
 {
     [TestClass]
     public class UnitTest1
     {
+        [AssemblyInitialize]
+        public static void AssemblyInit(TestContext _)
+        {
+            Mutex? functionStarted = null;
+            while (!Mutex.TryOpenExisting("FunctionStartup", out functionStarted))
+            {
+                Thread.Sleep(200);
+            }
+            functionStarted?.Dispose();
+        }
+
         [TestMethod]
         public async Task TestMethod1()
         {
