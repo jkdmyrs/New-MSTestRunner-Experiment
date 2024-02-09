@@ -3,6 +3,16 @@ namespace MSTestExperiment.Tests
     [TestClass]
     public class UnitTest1
     {
+        [AssemblyInitialize]
+        public static void AssemblyInit(TestContext _)
+        {
+            while (!Mutex.TryOpenExisting("FunctionStartup", out Mutex? _))
+            {
+                Thread.Sleep(200);
+            }
+
+        }
+
         [TestMethod]
         public async Task TestMethod1()
         {
