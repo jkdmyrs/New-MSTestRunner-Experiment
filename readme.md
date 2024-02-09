@@ -27,9 +27,3 @@ Then you are free to debug the function app and test project at the same time.
 1. start the projects as normal (run button in Visual Studio)
 
 Then you are free to debug the function app and test project at the same time. **No need to manually attach the debugger.**
-
-### Questions
-
-- Are we always garunteed that the function app will start up before the tests run?
-    - Or are there race-conditions where the tests exectute before the function HTTP endpoints are available?
-    - I haven't hit this race condition yet in my testing, but the function app is minimal with quick startup times. Maybe a function app with a longer startup time could be impacted?
