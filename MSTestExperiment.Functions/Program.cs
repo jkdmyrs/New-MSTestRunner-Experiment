@@ -11,4 +11,18 @@ var host = new HostBuilder()
     })
     .Build();
 
-host.Run();
+Mutex? functionStartup = null;
+try
+{
+    IHostApplicationLifetime hostApplicationLifetime = (IHostApplicationLifetime)host.Services.GetRequiredService(typeof(IHostApplicationLifetime));
+    hostApplicationLifetime.ApplicationStarted.Register(() =>
+    {
+        functionStartup = new(true, "FunctionStartup");
+    });
+
+    host.Run();
+}
+finally
+{
+    functionStartup?.Dispose();
+}
