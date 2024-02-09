@@ -19,6 +19,9 @@ Then you are free to debug the function app and test project at the same time.
 
 ## With the new runner
 
+1. do some pre-configuration to synchronize the server/client
+    - use `IHostApplicationLifetime` to register a `ApplicationStarted` event that initializes a `Mutex` lock
+    - use `[AssemblyInitialize]` to spin during test startup until the `Mutex` lock is ready
 1. configure multiple startup projects
     - setup test project and function app to start
 1. start the projects as normal (run button in Visual Studio)
